@@ -1,0 +1,13 @@
+background-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1000px; /* Esto hará que el fondo ocupe toda la altura de la ventana */
+  }
+
+.white-text {
+    color: white;
+  }
+  
+
+  
