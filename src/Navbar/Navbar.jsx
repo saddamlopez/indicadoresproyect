@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Typography from '@mui/material/Typography';
 import logo from '../assets/logouatf.webp';
-import fondo from '../assets/fondo.jpg'; // Asegúrate de importar la imagen de fondo
+import fondo from '../assets/fondo.jpg'; 
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import "./Navbar.css";
@@ -14,7 +14,7 @@ const Navbar = () => {
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
-                p={2}
+                p={1}
                 bgcolor="background.paper"
                 className="background-container"
                 style={{
@@ -24,11 +24,11 @@ const Navbar = () => {
             >
                 <Box display="flex" alignItems="center" mb={1}>
                     <img src={logo} alt="Logo UATF" style={{ width: 100, marginRight: 10 }} />
-                    <Typography variant="h5" component="h1" className="white-text">
-                        Dirección de Servicios Académicos
+                    <Typography variant="h5" component="h3" className="white-text">
+                      DIRECCION DE SERVICIOS ACADEMICSS
                     </Typography>
                 </Box>
-                <Typography variant="h6" component="h2" className="white-text">
+                <Typography variant="h6" component="h5" className="white-text">
                     INDICADORES ACADEMICO
                 </Typography>
             </Box>

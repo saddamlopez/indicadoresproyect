@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--primary-color: #c7a17a;
+	--background-color: #f9f5f0;
+	--dark-color: #151515;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ********************************** */
+/*             UTILIDADES             */
+/* ********************************** */
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.container-hero {
+	padding: 20px;
+	background-color: var(--background-color);
+	background-image: linear-gradient(100deg, #000000, #00000020),
+		url('/src/assets/img/OIP.jpeg');
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem ;
+}
+
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	
+	
+}
+.logo-pequeno {
+    width: 60px; /* Ajusta el tamaño según lo necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    position: auto; /* Posiciona la imagen en relación al contenedor */
+    top: 10px; /* Ajusta el espacio superior */
+    left: 10px; /* Ajusta el espacio izquierdo */
+}
+.container-logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Color de fondo suave */
+    border-bottom: 2px solid #ccc; /* Línea divisoria */
+}
+.content-customer-support {
+    display: flex;
+	flex-direction: column;
+	color: #f9f6f6;
+}
+
+/* ************* NAVBAR ************* */
+.texto-medio {
+    text-align: center;
+    margin: 2px 0;
+}
+
+.texto-medio h1 {
+    font-size: 30px;
+    color: #f2f5f8;
+    margin-bottom: 10px;
+}
+
+.texto-medio h2 {
+    font-size:20px;
+    color: #f2f5f8;
+    font-weight: normal;
+}
+.container-navbar {
+    background-color: #ffffff;
+    padding: 20px;
+	text-align: left;
+
+	border-top: 10px solid #c5c4c4
+
+}
+
+.navbar {
+	
+	justify-content: space-between;
+	align-items: center;
+
+}
+.navbar h1 {
+	margin-bottom: 5px; /* Ajusta el margen inferior del h1 */
+  }
+  
+  .navbar h3 {
+	margin-top: 0; /* Elimina el margen superior del h5 */
+  }
+
+/*               FOOTER               */
+/* ********************************** */
+
+.footer {
+	background-color: #d3d5d7;
+	align-items: center; /* Centra verticalmente */
+    padding: 10px;
+	height: 100px; /* Ajusta el padding según sea necesario */
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+
+
+	border-top: 1px solid #e490a8;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.6rem;
+	
+}
+.copyright .logo {
+    width: 35px; /* Ajusta el tamaño según lo necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio a la derecha del logo */
+}

@@ -1,45 +1,20 @@
-import React from 'react';
-import { Pie } from 'react-chartjs-2';
-import 'chart.js/auto';
-import './PieChart.css';
+import * as React from 'react';
+import { PieChart } from '@mui/x-charts/PieChart';
 
-const PieChart = () => {
-  const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [
-      {
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(25, 59, 12, 0.2)',
-          'rgba(54, 12, 25, 0.2)',
-          'rgba(25, 26, 86, 0.2)',
-          'rgba(75, 12, 12, 0.2)',
-          'rgba(13, 12, 255, 0.2)',
-          'rgba(25, 19, 64, 0.2)',
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-        ],
-        borderWidth: 1,
-      },
-    ],
-  };
-  const options = {
-    responsive: true,
-    maintainAspectRatio: false,
-  };
-
+export default function BasicPie() {
   return (
-    <div className="pie-chart-container">
-      <Pie data={data} options={options} />
-    </div>
+    <PieChart
+      series={[
+        {
+          data: [
+            { id: 0, value: 10, label: 'INDICADORES DE EFICIENCIA' },
+            { id: 1, value: 15, label: 'INDICADORES DE EFICACIA' },
+            { id: 2, value: 20, label: 'INDICADORES DE EFECTIVIDAD' },
+          ],
+        },
+      ]}
+      width={800}
+      height={250}
+    />
   );
-};
-
-export default PieChart;
+}

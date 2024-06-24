@@ -1,14 +1,24 @@
 import './App.css'
-import Navbar from './Navbar/Navbar'
+//import Navbar from './Navbar/Navbar'
+
+import './assets/css/Styles.css'
+
+import Header from './componentes/Header'
+import Footer from './componentes/Footer'
+
 import PieChart from './Navbar/PieChart'
+
+
+
 
 function App() {
   return (
-    <div className="App">
-     <Navbar/> 
+    <>
+     <Header/> 
      <PieChart />
-    </div>
-  )
+     <Footer/>
+    </>
+  );
 }
 
 export default App;
